@@ -1,0 +1,6 @@
+.brick {
+    width: 125px;
+    height: 75px;
+    background-color: brown;
+    border: 3mm inset rgba(225, 194, 176, 0.25);
+}
