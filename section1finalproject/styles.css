@@ -1,6 +1,88 @@
-.brick {
-    width: 125px;
-    height: 75px;
-    background-color: brown;
-    border: 3mm inset rgba(225, 194, 176, 0.25);
+body {
+    background-color: black;
+    font-family: 'Merriweather', serif;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
+
+.wrapper {
+    opacity: 0;
+    animation: fadeIn 3s ease forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.brick {
+    width: 100px;            
+    height: 55px;             
+    border: 2mm inset #b9361c;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    border-radius: 3px; 
+    background: linear-gradient(135deg, 
+                 #b22222 30%, 
+                 #e74c3c 100%);
+    margin-right: 5px;
+    background-image: url('brick.png');
+    background-position: center;
+}
+
+.wall {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.wall-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    justify-content: center;
+}
+
+.prompt {
+    margin-bottom: 30px;
+}
+
+.do-something {
+    padding: 20px;
+    background-color: rgb(53, 52, 52);
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
+    transition-duration: 500ms;
+    transition-property: background-color, color, letter-spacing, font-weight;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.do-something:hover {
+    padding: 20px;
+    color: black;
+    background-color: white;
+    font-weight: 900;
+    letter-spacing: 0px;
+}
+
+.stay {
+    color: white;
+    text-decoration: none;
+}
+
+.dialogue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
