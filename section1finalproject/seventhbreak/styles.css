@@ -63,7 +63,7 @@ body {
 }
 
 .prompt {
-    margin-bottom: 30px;
+    margin-bottom: 300px;
 }
 
 .do-something {
@@ -119,6 +119,7 @@ body {
 .stay {
     color: black;
     text-decoration: none;
+    margin-bottom: 100px;
 }
 
 .hammer {
