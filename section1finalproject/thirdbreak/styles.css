@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.823);
     font-family: 'Merriweather', serif;
     color: white;
     animation: fade-color 1s ease forwards;
@@ -10,10 +10,10 @@ body {
 
 @keyframes fade-color {
     0% {
-        background-color: black;  /* Starting color */
+        background-color: rgba(0, 0, 0, 0.823);  /* Starting color */
     }
     100% {
-        background-color: rgba(0, 0, 0, 0.901); /* Ending color */
+        background-color: rgba(0, 0, 0, 0.76); /* Ending color */
     }
 }
 
@@ -22,15 +22,22 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* position: absolute;
-    top: 20%;
-    left: 20% */
+}
+
+#fake-brick {
+    width: 116px;            
+    height: 71px;             
+    border-radius: 3px; 
+    margin-right: 5px;
+    background: none;
+    border: none;
+    box-shadow: none;
 }
 
 .brick {
     width: 100px;            
     height: 55px;             
-    border: 8px inset #b9361c;
+    border: 2mm inset #b9361c;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
     border-radius: 3px; 
     background: linear-gradient(135deg, 
@@ -116,14 +123,23 @@ body {
 
 .hammer {
     position: relative; 
-    margin-bottom: 30;
-    width: 140px;
+    width: 145px;
     height: 140px;
+    margin-bottom: 30;
     z-index: 2;
     animation: hit 1.25s, disappear 1.5s ease forwards;
     background-image: url('../hammer.png');
     background-position: center;
     background-size: contain;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes hit {
@@ -141,14 +157,5 @@ body {
     }
     100% {
         transform: rotate(0deg);
-    }
-}
-
-@keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
     }
 }
