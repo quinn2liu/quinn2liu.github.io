@@ -1,7 +1,7 @@
 body {
-    background-color: rgba(0, 0, 0, 0.901);
+    background-color: rgba(0, 0, 0, 0.359);
     font-family: 'Merriweather', serif;
-    color: white;
+    color: black;
     animation: fade-color 1s ease forwards;
     animation-delay: 3s;
     display: flex;
@@ -10,10 +10,10 @@ body {
 
 @keyframes fade-color {
     0% {
-        background-color: rgba(0, 0, 0, 0.901);  /* Starting color */
+        background-color: rgba(0, 0, 0, 0.359);  /* Starting color */
     }
     100% {
-        background-color: rgba(0, 0, 0, 0.804); /* Ending color */
+        background-color: rgba(0, 0, 0, 0.173); /* Ending color */
     }
 }
 
@@ -68,7 +68,7 @@ body {
 
 .do-something {
     padding: 20px;
-    background-color: rgb(32, 31, 31);
+    background-color: rgb(53, 52, 52);
     color: white;
     letter-spacing: 2px;
     text-align: center;
@@ -117,7 +117,7 @@ body {
 }
 
 .stay {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
