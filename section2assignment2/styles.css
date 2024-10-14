@@ -1,0 +1,36 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.goals {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.refresh {
+    width: 100;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    margin: 10px;
+}
+
+.net {
+    width: 600;
+}
+
+.puck {
+    width: 50;
+}
+
+.stick {
+    width: 500;
+}
+
+.goal {
+    width: 400;
+    object-fit: contain;
+}
