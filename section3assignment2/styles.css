@@ -1,0 +1,61 @@
+@keyframes color {
+    0%   { background: #F5CE2F; }
+    20%  { background: #e9aa4d; }
+    40%  { background: #e04244; }
+    60%  { background: #FAD127; }
+    80%  { background: #F8B959; }
+    100% { background: #F5CE2F; }
+}
+
+body {
+    background: #F5CE2F; 
+    animation: color 9s infinite linear;
+    font-family: 'Copperplate', fantasy;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.problem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10%
+}
+
+.mcd {
+    position: relative;
+    width: 40%;
+    border: 20px solid rgba(255, 255, 255, .50);
+    border-radius: 10px;
+}
+
+.you {
+    font-size: 4rem;
+}
+
+.applet {
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+}
+
+.connect-images {
+    position: relative;
+    /* display: flex;
+    flex-direction: row; */
+    width: 50%;
+}
+
+/* .applet {
+    height: 30%;
+
+} */
+
+.connect {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-size: 60px;
+}
